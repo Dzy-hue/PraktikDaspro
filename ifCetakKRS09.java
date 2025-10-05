@@ -5,6 +5,7 @@ public class ifCetakKRS09 {
         System.out.println("--- Cetak KRS SIAKAD ---");
         System.out.print("Apakah UKT sudah lunas? (true/false): ");
         boolean uktLunas = sc.nextBoolean();
+        System.out.println("--- Hasil Menggunakan IF-ELSE ---");
 
         if (uktLunas) {
             System.out.println("Pembayaran UKT terverifikasi");
@@ -12,6 +13,13 @@ public class ifCetakKRS09 {
          } else {
             System.out.println("Registrasi ditolak. Silakan lunasi UKT terlebih dahulu");
          }
+
+         System.out.println("\n===========================================\n"); 
+         
+        System.out.println("--- Hasil Menggunakan Ternary Operator ---");
+        String pesan = uktLunas ? "Pembayaran UKT terverifikasi\nSilahkan cetak KRS dan minta tanda tangan DPA" : "Registrasi ditolak. Silakan lunasi UKT terlebih dahulu";
+        System.out.println(pesan);
+
         sc.close();
     }
 }
